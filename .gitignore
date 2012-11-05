@@ -21,3 +21,5 @@ ipch
 /_ReSharper.ad
 
 *.sdf
+
+*.suo
