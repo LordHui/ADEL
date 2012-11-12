@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ad_tests", "ad_tests\ad_tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ad_samples", "ad_samples", "{4C3A90F0-ECA5-4D07-9643-35DFEA75253A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Newton", "ad_samples\newton\newton.vcxproj", "{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hessian", "ad_samples\hessian\Hessian.vcxproj", "{2714A96B-4922-4A22-B7C0-9CCD322B72F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,11 +35,27 @@ Global
 		{CFBF8B0F-383D-40FD-8A67-8CF4BBBEEFD4}.Release|Win32.Build.0 = Release|Win32
 		{CFBF8B0F-383D-40FD-8A67-8CF4BBBEEFD4}.Release|x64.ActiveCfg = Release|x64
 		{CFBF8B0F-383D-40FD-8A67-8CF4BBBEEFD4}.Release|x64.Build.0 = Release|x64
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Debug|Win32.Build.0 = Debug|Win32
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Debug|x64.ActiveCfg = Debug|Win32
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Release|Win32.ActiveCfg = Release|Win32
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Release|Win32.Build.0 = Release|Win32
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Release|x64.ActiveCfg = Release|x64
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E}.Release|x64.Build.0 = Release|x64
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Debug|Win32.Build.0 = Debug|Win32
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Debug|x64.ActiveCfg = Debug|x64
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Debug|x64.Build.0 = Debug|x64
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Release|Win32.ActiveCfg = Release|Win32
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Release|Win32.Build.0 = Release|Win32
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Release|x64.ActiveCfg = Release|x64
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9BF24BD0-EBF4-4A30-BD17-C6B060CCD856} = {4C3A90F0-ECA5-4D07-9643-35DFEA75253A}
+		{6458C69A-4A78-4776-BC2E-D3AF4B34CC9E} = {4C3A90F0-ECA5-4D07-9643-35DFEA75253A}
+		{2714A96B-4922-4A22-B7C0-9CCD322B72F9} = {4C3A90F0-ECA5-4D07-9643-35DFEA75253A}
 	EndGlobalSection
 EndGlobal
