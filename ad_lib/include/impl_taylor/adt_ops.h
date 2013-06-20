@@ -168,6 +168,14 @@ struct ad_div
 		ad_mad_helper<realT, ND, 1, ID-1, ID-1>::unroll(sum, r, bd);
 		r.D[ID-1] = -rv * sum;
 	}
+
+	template<typename CT, int ID>
+	AD_MOD static void impl(ad_var_holder<realT, ND> &r, const CT &rv, const ad_var_holder<realT, ND> &bd, const realT &recip)
+	{
+		realT sum = rv * bd.D[ID-1];
+		ad_mad_helper<realT, ND, 1, ID-1, ID-1>::unroll(sum, r, bd);
+		r.D[ID-1] = -recip * sum;
+	}
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

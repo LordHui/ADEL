@@ -18,7 +18,7 @@
 #	if defined(__GNUC__)
 #		define AD_FORCEINLINE __inline__ __attribute__((always_inline))
 #	elif defined(_WIN32)
-#		define AD_FORCEINLINE __forceinline
+#		define AD_FORCEINLINE inline
 #	else
 #		error --- !!! UNKNOWN COMPILER
 #	endif

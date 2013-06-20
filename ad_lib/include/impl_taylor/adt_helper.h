@@ -74,6 +74,14 @@ struct ad_d_helper
 		OP::template impl<CT, ID>(result, a, db);
 	}
 
+	// 2 - arg: ra cf ca
+	template<typename CT>
+	AD_MOD static void unroll(ad_var_holder<realT, ND> &result, const CT &a, const ad_var_holder<realT, ND> &db, const realT &recip)
+	{
+		ad_d_helper<realT, ND, OP, ID-1>::unroll(result, a, db, recip);
+		OP::template impl<CT, ID>(result, a, db, recip);
+	}
+
 	// 3 - arg: ra ca ca cf cf
 	AD_MOD static void unroll(ad_var_holder<realT, ND> &result, const ad_var_holder<realT, ND> &da, const ad_var_holder<realT, ND> &db, const realT &aa, const realT &bb)
 	{
@@ -160,6 +168,12 @@ struct ad_d_helper<realT, ND, OP, 0>
 	// 2 - arg: ra cf ca
 	template<typename CT>
 	AD_MOD static void unroll(ad_var_holder<realT, ND> &result, const CT &a, const ad_var_holder<realT, ND> &db)
+	{
+	}
+
+	// 2 - arg: ra cf ca
+	template<typename CT>
+	AD_MOD static void unroll(ad_var_holder<realT, ND> &result, const CT &a, const ad_var_holder<realT, ND> &db, const realT &recip)
 	{
 	}
 
@@ -252,6 +266,14 @@ struct ad_v_helper
 	{
 		ad_v_helper<realT, ND, NV, OP, IV-1>::unroll(result, a, db);
 		ad_d_helper<realT, ND, OP, ND>::unroll(result.V[IV-1], a, db.V[IV-1]);
+	}
+
+	// 2 - arg: ra cf ca
+	template<typename CT>
+	AD_MOD static void unroll(ad_holder<realT, ND, NV> &result, const CT &a, const ad_holder<realT, ND, NV> &db, const realT &recip)
+	{
+		ad_v_helper<realT, ND, NV, OP, IV-1>::unroll(result, a, db, recip);
+		ad_d_helper<realT, ND, OP, ND>::unroll(result.V[IV-1], a, db.V[IV-1], recip);
 	}
 
 
@@ -353,6 +375,12 @@ struct ad_v_helper<realT, ND, NV, OP, 0>
 	// 2 - arg: ra cf ca
 	template<typename CT>
 	AD_MOD static void unroll(ad_holder<realT, ND, NV> &result, const CT &a, const ad_holder<realT, ND, NV> &db)
+	{
+	}
+
+	// 2 - arg: ra cf ca
+	template<typename CT>
+	AD_MOD static void unroll(ad_holder<realT, ND, NV> &result, const CT &a, const ad_holder<realT, ND, NV> &db, const realT &recip)
 	{
 	}
 

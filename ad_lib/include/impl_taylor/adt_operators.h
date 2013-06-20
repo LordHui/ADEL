@@ -176,7 +176,8 @@ AD_TEMPL AD_MOD ad_t operator /(const int& a, const ad_t& b)
 AD_TEMPL AD_MOD ad_t operator /(const realT& a, const ad_t& b)
 {
 	ad_t r;
-	r.v = a / b.v;
-	ns::ad_v_helper<realT, ND, NV, ns::ad_div<realT, ND>>::unroll(r.AD, r.v, b.AD);
+	realT recip = (realT)1.0 / b.v;
+	r.v = a * recip;
+	ns::ad_v_helper<realT, ND, NV, ns::ad_div<realT, ND>>::unroll(r.AD, r.v, b.AD, recip);
 	return r;
 }

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{fbeee71c-10e2-45b5-b4c4-7c0816361c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Trigonometry">
+      <UniqueIdentifier>{0004ceb9-f9ca-4f10-a69e-ba3b5d28b6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logarithmic">
+      <UniqueIdentifier>{d37dd755-cb36-44da-9028-f19878fdc594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{920ee032-61d2-477f-9b15-cfa169c36983}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ReverseAD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Abs.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Acos.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Atan.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Atan2.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Cos.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Cosh.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Sinh.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Sin.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Tan.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Tanh.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Asin.h">
+      <Filter>Header Files\Trigonometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Ceil.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Floor.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Add.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Div.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Mul.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Sub.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Exp.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="Log10.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="Pow.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqr.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqrt.h">
+      <Filter>Header Files\Logarithmic</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryMinus.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Operations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Comparison.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ADVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ADHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
